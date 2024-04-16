@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+Welcome to index2 page 
+ROLL NO: <p th:text=${o3.rollno}>Roll No</p></body>
+NAME: <p th:text=${o3.uname}>User Name</p></body>
+ADDRESS: <p th:text=${o3.address}>Address</p></body>
+
+
+
+<br><br><br>
+
+<div th:object="${o3}">
+
+ROLL NO: <p th:text=*{rollno}>Roll No</p></body>
+NAME: <p th:text=*{uname}>User Name</p></body>
+ADDRESS: <p th:text=*{address}>Address</p></body>
+
+
+
+</div>
+</html>
